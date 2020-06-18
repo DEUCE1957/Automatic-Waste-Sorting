@@ -1,0 +1,65 @@
+# Blacklist files/folders in same directory as the .gitignore file
+/*
+
+# Whitelist 
+!scripts/
+!manuals/
+!docker/
+
+# Visual Studio Code
+.vscode/
+
+# Virtual Environment
+.env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# ROS Binaries
+workspace/data
+workspace/src/
+workspace/devel
+workspace/build
+workspace/baxter.sh
+workspace/.catkin_workspace
+workspace/.rosinstall
+workspace/.rosinstall.bak
+workspace/.catkin_tools
+
+
+
+# Baxter_Picker ROS Package
+!*/workspace/src/baxter_picker
+
+# Customisations of existing ROS Packages
+!*/workspace/src/gazebo2rviz/launch
+!*/workspace/src/gazebo2rviz/scripts
+
+# Custom Scripts
+!*/workspace/src/setup_workspace.sh
+!*/workspace/src/baxter.sh
+
+# Whitelist some files
+!.gitignore
+!README.md
+!timelog.md
+!*.ipynb
+!MeshProcessing.blend
+!Dockerfile
+
+# Ignore all files named .DS_Store or ending with .log
+.vscode/
+
+
+# Whitelist workspace/src/baxter_picker 
+# trailing "/" is optional for folders, may match file though.
+# "/" is NOT optional when followed by a *
+!workspace/
+workspace/*
+!workspace/src/
+workspace/src/*
+!workspace/src/baxter_picker/
+!workspace/src/gazebo2rviz/
+!folder/a/file.txt
+
+
